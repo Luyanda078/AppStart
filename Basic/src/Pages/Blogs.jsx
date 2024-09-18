@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Blogs() {
+  const [hello, setHello] = useState(true);
   return (
-    <div>
-      
+    <div style={{backgroundColor:hello?"blue":"pink"}}>
+      <h1>Blogs Page</h1>
     </div>
   )
 }
